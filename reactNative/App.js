@@ -14,7 +14,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={Home}/>
-        <Stack.Screen name="Navigation" component={Navigation}/>
+        <Stack.Screen name="Navigation" component={Navigation} initialParams={{name:"Guest"}}/>
         <Stack.Screen name="Form" component={Form}/>
       </Stack.Navigator>
     </NavigationContainer>
